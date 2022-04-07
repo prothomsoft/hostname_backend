@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:eu-west-3:430096719724:task-definition/hostname:141"
+        LoadBalancerInfo:
+          ContainerName: "hostname"
+          ContainerPort: 80
