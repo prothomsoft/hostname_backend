@@ -48,10 +48,7 @@ app.use((error, req, res, next) => {
     res.json({ message: error.message || "An unknown error occurred!" });
 });
 
-//const mongoURL = "mongodb://tprokop-win3:27017,tprokop-win3:27018,tprokop-win3:27019/domel?replicaSet=rs";
-//const useUnifiedTopology = true;
-const mongoURL = "mongodb+srv://99foto:99foto@cluster0-9qo5l.mongodb.net/99fotopl?retryWrites=true&w=majority";
-const useUnifiedTopology = true;
+
 
 mongoose.set("useCreateIndex", true);
 mongoose
